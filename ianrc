@@ -24,14 +24,6 @@ fi
 export EDITOR=/usr/bin/vim
 export APPLICATION_ENV=development
 
-# development env setup
-verdex_env="$HOME/verdex-oe/build/profile"
-oe_env=${verdex_env}
-if [ -f ${oe_env} ]; then
-  echo "Loading OpenEmbedded profile: ${oe_env}"
-  source ${oe_env}
-fi
-
 # Color setup
 txtblk='\e[0;30m' # Black - Regular
 txtred='\e[0;31m' # Red
@@ -70,4 +62,8 @@ txtrst='\e[0m'    # Text Reset
 openesc='\['   # escape non-printing characters
 closesc='\]'
 
-export PS1=${openesc}${txtgrn}${closesc}${PS1}${openesc}${txtrst}${closesc}
+if [ -f $HOME/env/color ]; then
+   . $HOME/env/color
+else
+   echo "Color config not found!"
+fi
