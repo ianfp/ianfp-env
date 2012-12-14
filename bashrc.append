@@ -1,0 +1,5 @@
+# Append the contents of this file to the end of
+# your .bashrc to enable custom bash settings
+if [ -f $HOME/env/ianrc ]; then
+    . $HOME/env/ianrc
+fi
