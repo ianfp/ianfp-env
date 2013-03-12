@@ -3,5 +3,7 @@ set encoding=utf8
 set ffs=unix
 set expandtab
 set smarttab
+set autoindent
+set smartindent
 set shiftwidth=4
 set tabstop=4
