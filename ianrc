@@ -3,6 +3,7 @@ echo "Loading ianrc"
 echo "============="
 
 # ls aliases
+alias ls='ls --color'
 alias ll='ls -lrt --time-style="+%Y-%m-%d %H:%M:%S"'
 alias lR='ls -R'
 #alias la='ls -A'
