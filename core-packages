@@ -1,2 +1,2 @@
-sudo apt-get install vim default-jre alpine python3 gitg
-sudo apt-get remove thunderbird evolution-common
+sudo apt-get install vim default-jre alpine python3 gitg curl
+sudo apt-get remove evolution-common
