@@ -24,6 +24,7 @@ if [ -d $HOME/bin ]; then
 fi
 export EDITOR=/usr/bin/vim
 export APPLICATION_ENV=development
+export LC_DATE=en_DK.utf8
 
 # Color setup
 txtblk='\e[0;30m' # Black - Regular
