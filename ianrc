@@ -6,8 +6,7 @@ echo "============="
 alias ls='ls --color'
 alias ll='ls -lrt --time-style="+%Y-%m-%d %H:%M:%S"'
 alias lR='ls -R'
-#alias la='ls -A'
-#alias l='ls -CF'
+alias ack='ack-grep'
 
 # other aliases
 alias cp='cp -i'
@@ -17,14 +16,18 @@ alias gtab='gvim --servername GVIM --remote-tab'
 alias grep='grep -I --exclude-dir=\.svn --exclude-dir=\.git'
 alias psu='ps -u ianfp f'
 alias trash='trash-put'
+alias g='gulp'
 
 # env setup
 if [ -d $HOME/bin ]; then
   export PATH=$HOME/bin:$PATH
 fi
+if [ -d $HOME/opt/nodejs/bin ]; then
+    export PATH=$PATH:$HOME/opt/nodejs/bin
+fi
 export EDITOR=/usr/bin/vim
-export APPLICATION_ENV=development
 export LC_DATE=en_DK.utf8
+export PYTHONPATH=$HOME/projects/fabtools
 
 # Color setup
 txtblk='\e[0;30m' # Black - Regular
