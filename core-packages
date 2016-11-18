@@ -1,2 +1,2 @@
-sudo apt-get install vim default-jre alpine python3 gitg curl
-sudo apt-get remove evolution-common
+sudo apt-get remove light-locker evolution-common
+sudo apt-get install vim default-jre alpine python3 gitg curl htop gedit-developer-plugins markdown xscreensaver
